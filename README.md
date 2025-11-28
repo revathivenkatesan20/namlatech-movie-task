@@ -2,8 +2,9 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-#demo link
-cinematic-world-fdgz94z6s-revathi-venkatesans-projects.vercel.app
+## Live demo link
+check it out here:
+[cinematic-world-fdgz94z6s-revathi-venkatesans-projects.vercel.app]
 
 # Cinematic World
 
