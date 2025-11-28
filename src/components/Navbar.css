@@ -1,0 +1,86 @@
+/* Navbar - responsive & compact, glossy purple */
+.cw-nav {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 18px;
+  background: linear-gradient(135deg,#7b3fe4 0%, #a45bf7 100%);
+  color: #fff;
+  position: sticky;
+  top:0;
+  z-index: 999;
+  gap:12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  flex-wrap:wrap;
+}
+
+/* left group (logo + brand) */
+.cw-left { display:flex; align-items:center; gap:10px; min-width:140px; flex: 0 1 auto; }
+.logo-box { font-size:1.6rem; line-height:1; }
+.brand { display:flex; gap:6px; align-items:center; font-weight:700; white-space:nowrap; }
+.brand-main { color:#fff; font-size:1rem; }
+.brand-accent { color:#ffe6ff; font-size:1rem; }
+
+/* center: search */
+.cw-center { flex:1 1 480px; display:flex; justify-content:center; min-width:180px; }
+.center-search {
+  display:flex;
+  align-items:center;
+  width:100%;
+  max-width:720px;
+  gap:0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  border-radius:10px;
+  overflow:hidden;
+  background: rgba(255,255,255,0.03);
+}
+.center-search input {
+  flex:1;
+  padding:10px 12px;
+  border:none;
+  outline:none;
+  background: transparent;
+  color:#fff;
+  font-size:14px;
+}
+.center-search input::placeholder { color: rgba(255,255,255,0.7); }
+.search-btn {
+  border:none;
+  padding:10px 14px;
+  background: linear-gradient(180deg,#a15cf8,#8740e6);
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+  min-width:80px;
+}
+
+/* right controls */
+.cw-right { display:flex; align-items:center; gap:8px; min-width:120px; justify-content:flex-end; flex:0 1 auto; }
+.cw-btn { background:#9f6fff; color:#fff; border:none; padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:600; font-size:14px; }
+.cw-icon { background:transparent; border:none; color:#fff; cursor:pointer; font-size:18px; padding:6px 8px; border-radius:8px; }
+
+/* responsive adjustments */
+
+/* Medium tablets */
+@media (max-width:1000px) {
+  .center-search { max-width:540px; }
+  .cw-left { min-width:120px; }
+}
+
+/* small tablets and phones */
+@media (max-width:720px) {
+  .cw-nav { padding:10px; gap:8px; }
+  .cw-left { min-width:100px; }
+  .cw-center { order:3; width:100%; }
+  .cw-right { order:2; gap:6px; }
+  .center-search input { font-size:14px; padding:10px; }
+  .search-btn { padding:10px; min-width:64px; font-size:14px; }
+}
+
+/* smallest phones */
+@media (max-width:420px) {
+  .brand-main, .brand-accent { font-size:0.95rem; }
+  .center-search input { font-size:13px; padding:9px; }
+  .search-btn { padding:9px; min-width:58px; }
+  .cw-btn { padding:7px 8px; font-size:13px; }
+}
