@@ -2,6 +2,8 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+#demo link:cinematic-world-fdgz94z6s-revathi-venkatesans-projects.vercel.app
+
 # Cinematic World
 
 A React + Vite web application for browsing movies with professional glossy purple UI, featuring 2025 releases, recently viewed movies, and favorites. Includes responsive cards, detailed descriptions, and fallback mock movies if the OMDb API is unavailable.
